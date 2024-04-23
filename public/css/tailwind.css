@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+th{
+  @apply whitespace-nowrap;
+}
+
+section, div {
+  @apply box-border;
+}
+
+.formTemplate .relative.w-full {
+  min-width: 0 !important;
+}
+
+.loader-wrapper div div svg {
+  height: 24px !important;
+}
+
+.customScroll::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+/* Track */
+.customScroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+.customScroll::-webkit-scrollbar-thumb {
+  background: #b90410;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.customScroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.active_page {
+  background-color: #915410a6 !important;
+  color: white !important;
+}
+.smallInput {
+  max-width: 190px;
+  width: 100%;
+}
+.smallInput > div {
+  min-width: 150px;
+  width: 100%;
+}
+
+.largeLorder svg {
+  height: 50px !important;
+  width: 50px !important;
+}
+.tableHover td {
+  transition: all 0.2s ease;
+}
+.tableHover:hover td{
+  background: #f1f5f9;
+}
